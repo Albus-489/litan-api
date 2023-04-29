@@ -11,6 +11,8 @@ import { LitansService } from './litans.service';
 import { CreateLitanDto } from './dto/create-litan.dto';
 import { UpdateLitanDto } from './dto/update-litan.dto';
 import { IBook } from 'src/scheamas/interfaces/IBook';
+import { DeleteVolumeDto } from './dto/delete-volume';
+import { AddSummaryDto } from './dto/add-summary.dto';
 
 @Controller('litans')
 export class LitansController {
@@ -36,6 +38,24 @@ export class LitansController {
   @Patch(':id')
   update(@Param('id') id: string, @Body() updateLitanDto: UpdateLitanDto) {
     return this.litansService.update(id, updateLitanDto);
+  }
+
+  @Patch(':id/add-volume')
+  addVolume(@Param('id') id: string, @Body() updateLitanDto: UpdateLitanDto) {
+    return this.litansService.addVolume(id, updateLitanDto);
+  }
+
+  @Patch(':id/add-summary')
+  addSummary(@Param('id') id: string, @Body() addSummaryDto: AddSummaryDto) {
+    return this.litansService.addSummary(id, addSummaryDto);
+  }
+
+  @Delete(':id/delete-volume')
+  deleteVolume(
+    @Param('id') id: string,
+    @Body() deleteVolumeDto: DeleteVolumeDto,
+  ) {
+    return this.litansService.removeVolume(id, deleteVolumeDto);
   }
 
   @Delete(':id')
