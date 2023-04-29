@@ -20,17 +20,4 @@ export class Book implements IBook {
   volumes: IVolume[];
   summary: ISummary[];
   rate: number;
-
-  getFullNotes() {
-    let bookInfo = {
-      name: this.name,
-      author: this.author,
-      image: this.image,
-      volumes: this.volumes,
-      summary: this.summary,
-      rate: this.rate,
-    };
-
-    return bookInfo;
-  }
 }
