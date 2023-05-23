@@ -1,7 +1,7 @@
-import { IBook } from './interfaces/IBook';
-import { ICharacter } from './interfaces/ICharacter';
-import { ISummary } from './interfaces/ISummary';
-import { IVolume } from './interfaces/IVolume';
+import { IBook } from '../interfaces/IBook';
+import { ICharacter } from '../interfaces/ICharacter';
+import { ISummary } from '../interfaces/ISummary';
+import { IVolume } from '../interfaces/IVolume';
 const nopreview = require('../images/nopreview.png');
 
 export class Book implements IBook {

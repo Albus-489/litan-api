@@ -1,7 +1,7 @@
-import { ICharacter } from './interfaces/ICharacter';
-import { ILocation } from './interfaces/ILocation';
-import { ISummary } from './interfaces/ISummary';
-import { IVolume } from './interfaces/IVolume';
+import { ICharacter } from '../interfaces/ICharacter';
+import { ILocation } from '../interfaces/ILocation';
+import { ISummary } from '../interfaces/ISummary';
+import { IVolume } from '../interfaces/IVolume';
 
 export class Volume implements IVolume {
   constructor(name: string) {
@@ -14,9 +14,9 @@ export class Volume implements IVolume {
   }
 
   name: string;
-  characters: ICharacter[];
-  rate: number;
-  locations: ILocation[];
-  length: number;
   summary: ISummary[];
+  characters: ICharacter[];
+  locations: ILocation[];
+  rate: number;
+  length: number;
 }
