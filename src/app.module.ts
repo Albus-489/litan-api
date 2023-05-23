@@ -8,7 +8,7 @@ import { MongooseModule } from '@nestjs/mongoose';
   imports: [
     LitansModule,
     MongooseModule.forRoot(
-      'mongodb+srv://bavrzar:nNToqiyWIN9CvGUD@cluster0.a24aa4a.mongodb.net/Litans?retryWrites=true&w=majority',
+      'mongodb+srv://bavrzar:kmYwvDKazuFFVnyG@cluster0.rnlg5o2.mongodb.net/?retryWrites=true&w=majority',
     ),
   ],
   controllers: [AppController],
