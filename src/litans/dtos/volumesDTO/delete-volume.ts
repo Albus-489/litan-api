@@ -1,3 +1,3 @@
 export class DeleteVolumeDto {
-  volumeIndex: number;
+  volumeID: string;
 }

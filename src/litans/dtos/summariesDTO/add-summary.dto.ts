@@ -1,4 +1,4 @@
 export class AddSummaryDto {
-  text: string;
-  index: number;
+  notes: string;
+  volumeID: string;
 }
